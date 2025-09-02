@@ -1,0 +1,27 @@
+{
+  "name": "mpu6050-game-server",
+  "version": "1.0.0",
+  "description": "WebSocket server bridge untuk MPU6050 sensor data ke game visualizer",
+  "main": "serial-socket.js",
+  "scripts": {
+    "start": "node serial-socket.js",
+    "dev": "nodemon serial-socket.js"
+  },
+  "dependencies": {
+    "serialport": "^10.4.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": [
+    "mpu6050",
+    "esp32",
+    "websocket",
+    "serial",
+    "game",
+    "iot"
+  ],
+  "author": "IoT Course",
+  "license": "MIT"
+}

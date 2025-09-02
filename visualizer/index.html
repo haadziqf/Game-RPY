@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPU6050 3D Game Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas class="game"></canvas>
+    
+    <!-- Sensor Data Display -->
+    <div id="sensor-panel">
+        <h3>MPU6050 Sensor Data</h3>
+        <div id="connection-status">Connecting...</div>
+        <div class="sensor-data">
+            <div>Roll: <span id="roll-value">0.0</span>°</div>
+            <div>Pitch: <span id="pitch-value">0.0</span>°</div>
+            <div>Yaw: <span id="yaw-value">0.0</span>°</div>
+        </div>
+        <div class="instructions">
+            <p>Tilt to control:</p>
+            <p>• Forward/Back: Pitch</p>
+            <p>• Left/Right: Roll</p>
+        </div>
+    </div>
+    
+    <div id="controls">
+      <div>
+        <button id="forward">▲</button>
+        <button id="left">◀</button>
+        <button id="backward">▼</button>
+        <button id="right">▶</button>
+      </div>
+    </div>
+    <div id="score">0</div>
+    <div id="result-container">
+      <div id="result">
+        <h1>Game Over</h1>
+        <p>Your score: <span id="final-score"></span></p>
+        <button id="retry">Retry</button>
+      </div>
+    </div>
+
+    <a id="youtube" target="_top" href="https://youtu.be/vNr3_hQ3Bws">
+      <span>Learn Three.js while building this game on YouTube</span>
+    </a>
+    <div id="youtube-card">
+      Learn Three.js while building this game on YouTube
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
